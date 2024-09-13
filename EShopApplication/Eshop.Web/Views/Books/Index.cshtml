@@ -1,0 +1,73 @@
+﻿@model List<EShop.Domain.Domain.Book>
+
+@{
+    ViewData["Title"] = "Book";
+}
+<body style="background-color:azure">
+
+<div style="margin-left: 26rem;
+  font-style: oblique;
+  font-family: initial;">
+<h3>Choose your world, Choose your word</h3>
+<h2 style="  margin-left: 4rem;">Now Choose your Book</h2>
+</div>
+<div class="container" style="padding-left: 7rem;">
+   
+
+    @for(int i=0;i<Model.Count; i++)
+    {
+        var item = Model[i];
+        if(i % 3 == 0)
+        {
+            @:<div class="row">
+        }
+        <div class="col-3 m-4">
+
+            <div class="card" style="width: 18rem; height: 47rem">
+                <img class="card-img-top" src="@item.BookImage" alt="Card image cap" style="width:18rem; height:21rem"> 
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight: bold;">@item.BookName</h5>
+                    <p class="card-text">@item.BookDescription</p>
+                    <h6>Price: @item.Price</h6>
+                    <h6>Author: @item.Author?.Name</h6>
+                    <h6>Publisher: @item.Publisher?.Name</h6>
+
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Books" asp-action="Edit" asp-route-id="@item.Id" class="btn"  style="background: #ef8b5c;
+  color: #1520a5;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+  <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+</svg>
+
+                    </a>
+                    <a asp-controller="Books" asp-action="Delete" asp-route-id="@item.Id" class="btn"  style="background: #ef8b5c;
+  color: #1520a5;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+  <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+</svg>
+</a>
+                    <a asp-controller="Books" asp-action="AddToCart" asp-route-id="@item.Id" class="btn"  style="background: #ef8b5c;
+  color: #1520a5;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>
+</a>
+
+                </div>
+
+            </div>
+        </div>
+
+        if(i % 3 == 2)
+        {
+            @:</div>
+        }
+    }
+     <div class="m-3">
+        <a class="btn " asp-controller="Books" asp-action="Create" style="background: #ef8b5c;
+  color: #1520a5;">Add new Book</a>
+
+    </div>
+</div>
+
+</body>
