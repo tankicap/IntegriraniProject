@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CKamp8FIilgitcevprB/AtcomtfCfgLgT38cG/UPXZYKEDN/ZFBKjXlDN8HLzvqjeA7tHhbd0WbB0jTAyL2gfQ==",
+  "dgSpecHash": "gUOcvX687nn0PYoX+YiytmxoG8towKZPYGKOmQi16t0hGHElMb7D5o4bKhqmU23mFpUXy1QA2sMbl93UBWaayg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj",
+  "projectFilePath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tankica\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Tankica\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

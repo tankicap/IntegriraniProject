@@ -59,6 +59,19 @@
           }
         }
       },
+      "Dapper/2.1.35": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MailKit/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -1234,6 +1247,27 @@
         "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
         "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
         "packageIcon.png"
+      ]
+    },
+    "Dapper/2.1.35": {
+      "sha512": "YKRwjVfrG7GYOovlGyQoMvr1/IJdn+7QzNXJxyMh0YfFF5yvDmTYaJOVYWsckreNjGsGSEtrMTpnzxTUq/tZQw==",
+      "type": "package",
+      "path": "dapper/2.1.35",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.1.35.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/net7.0/Dapper.dll",
+        "lib/net7.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
       ]
     },
     "MailKit/4.5.0": {
@@ -3181,6 +3215,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Dapper >= 2.1.35",
       "EShop.Domain >= 1.0.0",
       "EShop.Repository >= 1.0.0",
       "MailKit >= 4.5.0",
@@ -3193,11 +3228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopApplication\\EShop.Service\\EShop.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopApplication\\EShop.Service\\EShop.Service.csproj",
       "projectName": "EShop.Service",
-      "projectPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopApplication\\EShop.Service\\EShop.Service.csproj",
+      "projectPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopApplication\\EShop.Service\\EShop.Service.csproj",
       "packagesPath": "C:\\Users\\Tankica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopApplication\\EShop.Service\\obj\\",
+      "outputPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopApplication\\EShop.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tankica\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3214,11 +3249,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
-              "projectPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj"
+            "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
+              "projectPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj"
             },
-            "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj": {
-              "projectPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj"
+            "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj": {
+              "projectPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj"
             }
           }
         }
@@ -3238,6 +3273,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.1.35, )"
+          },
           "MailKit": {
             "target": "Package",
             "version": "[4.5.0, )"

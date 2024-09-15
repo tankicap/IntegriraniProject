@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ClMRR01bSG/RWcETYdZmrD7Dupv1pk2dk7e+f/utCvTZDafhE+toDQnKG+CJJxOCAX+Q1BzukxLlKnd64XO6Fw==",
+  "dgSpecHash": "0xvWqaYQA3T7CIUN6QAZUY1V1LEUBzL4G9nnFs4jCWVW/TmB0VqgpAIyAZVAhrbTLFPNd5IOl/tjUZ/KxFTODw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tankica\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.3\\microsoft.aspnetcore.cryptography.internal.8.0.3.nupkg.sha512",
     "C:\\Users\\Tankica\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.3\\microsoft.aspnetcore.cryptography.keyderivation.8.0.3.nupkg.sha512",

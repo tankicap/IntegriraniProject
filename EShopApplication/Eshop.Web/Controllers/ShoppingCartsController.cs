@@ -11,16 +11,19 @@ using EShop.Service.Interface;
 using Microsoft.Extensions.Options;
 using EShop.Domain;
 using Stripe;
+using Eshop.DomainEntities;
 
 namespace Eshop.Web.Controllers
 {
     public class ShoppingCartsController : Controller
     {
         private readonly IShoppingCartService _shoppingCartService;
-
-        public ShoppingCartsController(IShoppingCartService _shoppingCartService, IOptions<StripeSettings> stripeSettings)
+        private readonly IEmailService _emailService;
+        public ShoppingCartsController(IShoppingCartService _shoppingCartService, IOptions<StripeSettings> stripeSettings, IEmailService emailService)
         {
             this._shoppingCartService = _shoppingCartService;
+            _emailService = emailService;
+
         }
 
         // GET: ShoppingCarts
@@ -84,6 +87,14 @@ namespace Eshop.Web.Controllers
 
             if (charge.Status == "succeeded")
             {
+                var emailMessage = new EmailMessage
+                {
+                    MailTo = stripeEmail, // на корисникот кој плати
+                    Subject = "Order Confirmation",
+                    Content = $"Thank you for your purchase. Your order with total {order.TotalPrice} USD was successful."
+                };
+
+                _emailService.SendEmailAsync(emailMessage);
                 this.order();
                 return RedirectToAction("SuccessPayment");
 

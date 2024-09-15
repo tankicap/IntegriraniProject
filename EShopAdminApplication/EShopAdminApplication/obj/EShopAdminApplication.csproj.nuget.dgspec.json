@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj": {}
+    "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj": {
+    "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
+        "projectUniqueName": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
         "projectName": "EShopAdminApplication",
-        "projectPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
+        "projectPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
         "packagesPath": "C:\\Users\\Tankica\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopAdminApplication\\EShopAdminApplication\\obj\\",
+        "outputPath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopAdminApplication\\EShopAdminApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tankica\\AppData\\Roaming\\NuGet\\NuGet.Config",

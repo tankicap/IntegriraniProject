@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DyngWBpqqKwo09aWXYZyHviOBXGgw22Y1+hjPtZ4l+2dU0l8ssUCsHl4ApzHOxcFfZvy5YaEi8g/oQnGY8cE2A==",
+  "dgSpecHash": "var6xlrLTd0IE/Jw5A320GypMubDr639ZuSlHSXCDs8sDs4m0w5kMsHQHqDwDK0FITETPQnNwis+Cjecuv566Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\IS1_2024-main\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
+  "projectFilePath": "C:\\Users\\Tankica\\Downloads\\IS1_2024-main 22\\BookStore\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tankica\\.nuget\\packages\\closedxml\\0.102.2\\closedxml.0.102.2.nupkg.sha512",
     "C:\\Users\\Tankica\\.nuget\\packages\\documentformat.openxml\\2.16.0\\documentformat.openxml.2.16.0.nupkg.sha512",

@@ -42,9 +42,9 @@ namespace EShop.Service.Implementation
                 {
                     var socketOptions = SecureSocketOptions.Auto;
 
-                    await smtp.ConnectAsync(_mailSettings.SmtpServer, 587, socketOptions);
+                    await smtp.ConnectAsync("smtp.gmail.com", 587, socketOptions);
 
-                    if (!string.IsNullOrEmpty(_mailSettings.SmtpUserName))
+                    if (!string.IsNullOrEmpty("janaspas66@gmail.com"))
                     {
                         await smtp.AuthenticateAsync(_mailSettings.SmtpUserName, _mailSettings.SmtpPassword);
                     }
